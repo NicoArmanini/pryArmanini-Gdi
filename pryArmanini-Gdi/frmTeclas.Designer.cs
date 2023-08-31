@@ -50,7 +50,7 @@
             // picNave
             // 
             this.picNave.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.picNave.Location = new System.Drawing.Point(303, 335);
+            this.picNave.Location = new System.Drawing.Point(294, 340);
             this.picNave.Name = "picNave";
             this.picNave.Size = new System.Drawing.Size(92, 29);
             this.picNave.TabIndex = 6;
@@ -66,7 +66,7 @@
             // 
             // pelota
             // 
-            this.pelota.Interval = 600;
+            this.pelota.Interval = 30;
             this.pelota.Tick += new System.EventHandler(this.pelota_Tick);
             // 
             // btnJugar
@@ -118,7 +118,7 @@
             // picBala
             // 
             this.picBala.BackColor = System.Drawing.Color.Red;
-            this.picBala.Location = new System.Drawing.Point(335, 286);
+            this.picBala.Location = new System.Drawing.Point(327, 292);
             this.picBala.Name = "picBala";
             this.picBala.Size = new System.Drawing.Size(23, 22);
             this.picBala.TabIndex = 11;
@@ -130,13 +130,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Wheat;
             this.ClientSize = new System.Drawing.Size(702, 435);
-            this.Controls.Add(this.picBala);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnJugar);
             this.Controls.Add(this.picNave);
+            this.Controls.Add(this.picBala);
             this.Controls.Add(this.contenedor);
             this.Name = "frmTeclas";
             this.Text = "frmTeclas";

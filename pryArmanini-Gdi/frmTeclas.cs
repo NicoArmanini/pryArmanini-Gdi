@@ -18,13 +18,14 @@ namespace pryArmanini_Gdi
         }
 
         public int speed = 20;
+        
         private void frmTeclas_MouseCaptureChanged(object sender, EventArgs e)
         {
         }
 
         private void frmTeclas_MouseDown(object sender, MouseEventArgs e)
         {
-        
+            
         }
 
         private void frmTeclas_KeyDown(object sender, KeyEventArgs e)
@@ -50,27 +51,23 @@ namespace pryArmanini_Gdi
 
             //para sacar un picture de la nave hacia arriba
 
-            if (e.KeyCode == Keys.Up)
-            {
-                
-            }
-
-
         }
-
-        Random aleatorio = new Random();
         int ejeX = 0;
-        int ejeY = 0;   
+        int ejeY = 0;
         private void pelota_Tick(object sender, EventArgs e)
         {
-            ejeY = aleatorio.Next(112, 320);
-            ejeX = aleatorio.Next(0, 612);
 
+            ejeX = picBala.Location.X;
+            ejeY = picBala.Location.Y;
+
+            picBala.Location = picNave.Location;
+            picBala.Location = new Point(ejeX, ejeY -5);
            
         }
 
         private void btnJugar_Click(object sender, EventArgs e)
         {
+            picBala.Location = picNave.Location;
             picBala.Show();
             btnJugar.Location = new Point(1000, 0);
             Enabled = false;
