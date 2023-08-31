@@ -52,18 +52,6 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmArkanoid.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmArkanoid.Designer.cs">
-      <DependentUpon>frmArkanoid.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmTecla.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmTecla.Designer.cs">
-      <DependentUpon>frmTecla.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmTeclas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,12 +62,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmArkanoid.resx">
-      <DependentUpon>frmArkanoid.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmTecla.resx">
-      <DependentUpon>frmTecla.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmTeclas.resx">
       <DependentUpon>frmTeclas.cs</DependentUpon>

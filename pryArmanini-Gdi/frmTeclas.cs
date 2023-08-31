@@ -17,21 +17,69 @@ namespace pryArmanini_Gdi
             InitializeComponent();
         }
 
+        public int speed = 20;
         private void frmTeclas_MouseCaptureChanged(object sender, EventArgs e)
         {
         }
 
         private void frmTeclas_MouseDown(object sender, MouseEventArgs e)
         {
-            if (e.Button == MouseButtons.Left)
+        
+        }
+
+        private void frmTeclas_KeyDown(object sender, KeyEventArgs e)
+        {
+            //es para mover la nave de derecha a izquierda
+
+            if (e.KeyCode == Keys.Left)
             {
-                //picNave.Left = true;
+                if (picNave.Left > 0)
+                {
+                    picNave.Left -= speed;
+                }
             }
 
-            if (e.Button == MouseButtons.Right)
+            if (e.KeyCode == Keys.Right)
             {
-                picNave.Location = new Point(e.X, e.Y);
+                if (picNave.Right > 0)
+                {
+                    picNave.Left += speed;
+                }
             }
+
+
+            //para sacar un picture de la nave hacia arriba
+
+            if (e.KeyCode == Keys.Up)
+            {
+                
+            }
+
+
+        }
+
+        Random aleatorio = new Random();
+        int ejeX = 0;
+        int ejeY = 0;   
+        private void pelota_Tick(object sender, EventArgs e)
+        {
+            ejeY = aleatorio.Next(112, 320);
+            ejeX = aleatorio.Next(0, 612);
+
+           
+        }
+
+        private void btnJugar_Click(object sender, EventArgs e)
+        {
+            picBala.Show();
+            btnJugar.Location = new Point(1000, 0);
+            Enabled = false;
+            pelota.Enabled = true;
+        }
+
+        private void frmTeclas_Load(object sender, EventArgs e)
+        {
+            picBala.Hide();
         }
     }
 }
