@@ -107,6 +107,7 @@ namespace pryArmanini_Gdi
         private void GenerateTarget()
         {
             ejeX = aleatorio.Next(0, 612);
+
             targetPictureBox = new PictureBox
             {
                 Size = new Size(50, 50),
