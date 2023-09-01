@@ -16,7 +16,7 @@ namespace pryArmanini_Gdi
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmTeclas());
+            Application.Run(new frmPruebaChatGpt());
         }
     }
 }

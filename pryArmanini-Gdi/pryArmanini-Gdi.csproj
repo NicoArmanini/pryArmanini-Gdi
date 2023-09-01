@@ -52,6 +52,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmPruebaChatGpt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPruebaChatGpt.Designer.cs">
+      <DependentUpon>frmPruebaChatGpt.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmTeclas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -62,6 +68,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPruebaChatGpt.resx">
+      <DependentUpon>frmPruebaChatGpt.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmTeclas.resx">
       <DependentUpon>frmTeclas.cs</DependentUpon>

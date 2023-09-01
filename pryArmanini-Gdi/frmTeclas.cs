@@ -62,6 +62,11 @@ namespace pryArmanini_Gdi
 
             picBala.Location = picNave.Location;
             picBala.Location = new Point(ejeX, ejeY -5);
+
+            if (picBala.Margin == pictureBox2.Margin && picBala.Location == pictureBox2.Location)
+            {
+                pictureBox2.Hide();
+            }
            
         }
 
@@ -72,11 +77,17 @@ namespace pryArmanini_Gdi
             btnJugar.Location = new Point(1000, 0);
             Enabled = false;
             pelota.Enabled = true;
+            btnCerrar.Enabled = true;
         }
 
         private void frmTeclas_Load(object sender, EventArgs e)
         {
             picBala.Hide();
+        }
+
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }
